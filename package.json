@@ -22,6 +22,7 @@
   "homepage": "https://github.com/delarosa0305/team-profile-generator#readme",
   "dependencies": {
     "D": "^1.0.0",
+    "inquirer": "^9.0.0",
     "jest": "^28.1.1"
   }
 }
