@@ -80,12 +80,12 @@ const checkEngineer = () => {
             },
             {
                 type: 'input',
-                name: 'officeNumber',
-                message: "Enter Engineer's office number: "
+                name: 'github',
+                message: "Enter Engineer's gitHub username: "
             }
         ]).then(engineerData => {
             console.log(engineerData);
-            const engineer = new Engineer(engineerData.name, engineerData.id, engineerData.email, engineerData.officeNumber);
+            const engineer = new Engineer(engineerData.name, engineerData.id, engineerData.email, engineerData.github);
             team.push(engineer)
             addMembers();
         })
@@ -110,12 +110,12 @@ const checkIntern = () => {
             },
             {
                 type: 'input',
-                name: 'officeNumber',
-                message: "Enter Intern's office number: "
+                name: 'school',
+                message: "Enter school Intern is attending: "
             }
         ]).then(internData => {
             console.log(internData);
-            const intern = new Intern(internData.name, internData.id, internData.email, internData.officeNumber);
+            const intern = new Intern(internData.name, internData.id, internData.email, internData.school);
             team.push(intern)
             addMembers();
         })
