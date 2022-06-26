@@ -1,10 +1,10 @@
 const Employee = require("../lib/Employee.js");
 
-const employee = new Employee('Bahad', '74829', 'bahad@gmail.com');
+const employee = new Employee('Bahad', 1, 'bahad@gmail.com');
 
 test('get the constructor values for employee object', () => {
     expect(employee.name).toBe('Bahad');
-    expect(employee.id).toBe('74829');
+    expect(employee.id).toBe(1);
     expect(employee.email).toBe('bahad@gmail.com');
 })
 
@@ -13,7 +13,7 @@ test("get Employee's name", () => {
 });
 
 test('get employee Id', () => {
-    expect(employee.getId()).toBe('74829');
+    expect(employee.getId()).toEqual(expect.any(Number));
 })
 
 test('get employee email', () => {
